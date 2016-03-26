@@ -6,6 +6,9 @@ function baseAttack() {
 	var health = document.getElementById('health2')
 	health.innerHTML-=attackArray[Math.floor(Math.random()*attackArray.length)]
 
+	var antImg = document.getElementById('antImg')
+	antImg.className += " animated wobble"
+
 	// calls youWin when health is out
 	if(health.innerHTML<=0){
 	youWin()
