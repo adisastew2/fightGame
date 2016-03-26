@@ -9,6 +9,10 @@ function baseAttack() {
 	// wobble effect
 	var antImg = document.getElementById('antImg')
 	antImg.className += " wobble"
+
+	// remove effect from opponent
+	var antImg = document.getElementById('protImg')
+	antImg.classList.remove("wobble")
 	
 	// calls youWin when health is out
 	if(health.innerHTML<=0){
