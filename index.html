@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rumble!</title>
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+	<link rel="icon" type="image/ico" href="favicon.png"/>
+</head>
+ <body>
+  	<h1 id="title">Rumble!</h1>
+
+  	<div class="container">
+      <!-- health -->
+      
+  		<div class="row">
+        <!-- player 1 -->
+  			<div class="col-md-6">
+
+          <h2 id="health1">100</h2>
+
+  		  </div><!-- end player 1 -->
+
+        <!-- player 2 -->
+  			<div class="col-md-6">
+
+  				<h2 id="health2">100</h2>
+
+  		  </div><!-- end player2 -->
+
+      </div><!-- end health -->
+
+      <!-- View -->
+  		<div class="row">
+        <!-- player1 -->
+        <div class="col-md-4">
+          <img class="img-responsive" src="img/ryu.gif" alt="Ryu">
+        </div>
+        <!-- middle -->
+        <div class="col-md-4"></div>
+        <!-- player2 -->
+        <div class="col-md-4">
+          <img class="img-responsive" src="img/akuma.gif" alt="Akuma">
+        </div>	
+  		</div><!-- end view -->
+
+      <!-- attack buttons -->
+      <button type="button" onclick="baseAttack()" class="btn btn-primary btn-lg">Attack!</button>
+      <!-- end attack buttons -->
+  	</div> 
+    <script src="js/jquery-1.12.1.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>  		
+  	<script src="js/script.js"></script> 	
+</body>
+</html>
