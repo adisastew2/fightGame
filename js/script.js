@@ -12,7 +12,7 @@ function baseAttack() {
 	return
 	}
 
-	// calls counter attack function in 2s
+	// calls counter attack function
 	setTimeout(counterAtt, 1000)
 	
 }
