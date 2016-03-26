@@ -6,9 +6,10 @@ function baseAttack() {
 	var health = document.getElementById('health2')
 	health.innerHTML-=attackArray[Math.floor(Math.random()*attackArray.length)]
 
+	// wobble effect
 	var antImg = document.getElementById('antImg')
-	antImg.className += " animated wobble"
-
+	antImg.className += " wobble"
+	
 	// calls youWin when health is out
 	if(health.innerHTML<=0){
 	youWin()
@@ -25,6 +26,11 @@ function counterAtt() {
 	// access and decrement health
 	var health = document.getElementById('health1')
 	health.innerHTML-=attackArray[Math.floor(Math.random()*attackArray.length)]
+
+	// remove effect from opponent
+	var antImg = document.getElementById('antImg')
+	antImg.classList.remove("wobble")
+
 
 	// calls youLose when health is out
 	if(health.innerHTML<=0){
