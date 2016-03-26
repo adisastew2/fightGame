@@ -27,6 +27,10 @@ function counterAtt() {
 	var health = document.getElementById('health1')
 	health.innerHTML-=attackArray[Math.floor(Math.random()*attackArray.length)]
 
+	// wobble effect
+	var antImg = document.getElementById('protImg')
+	antImg.className += " wobble"
+
 	// remove effect from opponent
 	var antImg = document.getElementById('antImg')
 	antImg.classList.remove("wobble")
