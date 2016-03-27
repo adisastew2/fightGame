@@ -1,10 +1,15 @@
+body {
+	text-align: center;
+	color: white;
+}
 img {
 	height:120px;
 	width:180px;
 }
-#akuma {
-	width:100%;
-}
-body {
-	text-align: center;
+.container{
+	background: url("../img/arena.gif") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
