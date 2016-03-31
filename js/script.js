@@ -1,4 +1,5 @@
 var attackArray = [10,15,20,10,15,10,10,10]
+var tauntArray = ["That felt like triple ply toilet paper... Baby soft","You need emotional content","You must be a massage therapist. Can I have your card?","Pathetic","Nice try, but I'm pretty sure being unimpressed can't kill someone!","Maybe this isn't for you. Try hopscotch","Wow, you're terrble","Oh I get it, you're trying to kill me with kindness","What's that smell?","That technique! But then you must be...Elmer Fudd!"]
 
 // my basic attack function
 function baseAttack() {
@@ -22,6 +23,10 @@ function baseAttack() {
 
 	// calls counter attack function
 	setTimeout(counterAtt, 1000)
+
+	// adds taunts from enemy
+	var taunt = document.getElementById("taunt")
+	taunt.innerHTML = tauntArray[Math.floor(Math.random()*tauntArray.length)]
 	
 }
 
