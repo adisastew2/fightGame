@@ -48,6 +48,8 @@ function counterAtt() {
 	// calls youLose when health is out
 	if(health.innerHTML<=0){
 	youLose()
+	var control = document.getElementById('control')
+	control.style.display='none'
 	}
 }
 
