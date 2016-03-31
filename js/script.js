@@ -14,19 +14,21 @@ function baseAttack() {
 	// remove effect from opponent
 	var antImg = document.getElementById('protImg')
 	antImg.classList.remove("wobble")
+
+	// adds taunts from enemy
+	var taunt = document.getElementById("taunt")
+	taunt.innerHTML = tauntArray[Math.floor(Math.random()*tauntArray.length)]
 	
 	// calls youWin when health is out
 	if(health.innerHTML<=0){
 	youWin()
+	taunt.innerHTML="What!? This can't be! It's just like the gypsie said!"
 	return
 	}
 
 	// calls counter attack function
 	setTimeout(counterAtt, 1000)
-
-	// adds taunts from enemy
-	var taunt = document.getElementById("taunt")
-	taunt.innerHTML = tauntArray[Math.floor(Math.random()*tauntArray.length)]
+	
 	
 }
 
