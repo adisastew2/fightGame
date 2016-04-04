@@ -1,6 +1,6 @@
 body {
 	text-align: center;
-	color: white;
+	color: #e6e600;
 }
 img {
 	height:400px;
@@ -12,4 +12,5 @@ img {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin-top: 30px;
 }
